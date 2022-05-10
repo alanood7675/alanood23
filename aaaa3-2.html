@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+function MM_DW_effectFade(obj,method,effect,speed)
+{
+    obj[method](effect, {}, speed);
+}
+function MM_DW_effectBlind(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+</script>
+</head>
+
+<body onLoad="MM_popupMsg('hey!')" onclick="MM_DW_effectFade($(this),'hide','fade',1000)">
+<video width="200" height="200" controls="controls" muted="muted" autoplay="autoplay" loop="loop" >
+  <source src="../رزان عادل الحربي/نوف/مقاطع لبعض الطيور - Some bird clips for design.mp4" type="video/mp4">
+</video>
+<audio controls>
+  <source src="../رزان عادل الحربي/نوف/بسملة.mp3" type="audio/mp3">
+</audio>
+	<h1 onClick="MM_DW_effectBlind($(this),'hide','blind','up',1000)" onMouseOver="MM_popupMsg('hey')">alanood</h1>
+</body>
+</html>
